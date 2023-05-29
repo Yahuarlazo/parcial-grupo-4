@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/perfiles")
+@RequestMapping("/api/v1/perfiles")
 public class PerfilController {
 
     @Autowired
