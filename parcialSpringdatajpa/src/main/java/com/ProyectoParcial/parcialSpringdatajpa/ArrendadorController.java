@@ -30,7 +30,7 @@ public class ArrendadorController {
             return ResponseEntity.notFound().build();
         }
     }
-
+//test
     @PostMapping("")
     public ResponseEntity<Arrendador> createArrendador(@RequestBody Arrendador arrendador) {
         Arrendador createdArrendador = arrendadorRepository.save(arrendador);
