@@ -31,7 +31,7 @@ public class ArrendadorController {
         }
     }
 //test
-    @PostMapping("")
+    @PostMapping("/add")
     public ResponseEntity<Arrendador> createArrendador(@RequestBody Arrendador arrendador) {
         Arrendador createdArrendador = arrendadorRepository.save(arrendador);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdArrendador);
