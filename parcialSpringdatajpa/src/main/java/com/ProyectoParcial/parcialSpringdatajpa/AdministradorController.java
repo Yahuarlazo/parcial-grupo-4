@@ -31,7 +31,7 @@ public class AdministradorController {
         }
     }
 
-    @PostMapping("")
+    @PostMapping("/add")
     public ResponseEntity<Administrador> createAdministrador(@RequestBody Administrador administrador) {
         Administrador createdAdministrador = administradorRepository.save(administrador);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdAdministrador);
