@@ -31,7 +31,7 @@ public class InmuebleController {
         }
     }
 
-    @PostMapping("")
+    @PostMapping("/add")
     public ResponseEntity<Inmueble> createInmueble(@RequestBody Inmueble inmueble) {
         Inmueble createdInmueble = inmuebleRepository.save(inmueble);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdInmueble);
